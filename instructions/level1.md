@@ -198,9 +198,11 @@ person.setAge(25);                    // Sæt ny værdi i objekt
 📖 [Se forklaring: Declaration & Initialization](#declaration-vs-initialization)
 
 **Opgave:** 
-1. Erklær en int variabel kaldet `myAge`
-2. Initialiser den til din alder
-3. Print variablen
+1. Lav en klasse i src folderen. Du bestemmer navnet på klassen.
+2. Skriv en main metode i klassen.
+3. Erklær en int variabel kaldet `myAge`
+3. Initialiser den til din alder
+4. I main metoden, Print variablen
 
 **Forventet Output:** (eksempel)
 ```
