@@ -1,8 +1,11 @@
 # Getting Started: Dit Første Java Program
 
-## Før du går til Variables Set 1
+For at komme i gang, skal først have downloadet og installeret IntelliJ som er det IDE (Integrated Development Environment), vi bruger til skrive kode i.
+[Følg denne guide](https://erhvervsakademikbenhavn.sharepoint.com/:b:/r/sites/cph-Lyngby/Shared%20Documents/4.%20Indhold%20%26%20Niveau/DAT/1.%20sem%20for%C3%A5r%202026/studerende/Uge%206%20-%20IntelliJ%20-%20installationsvejledning.pdf?csf=1&web=1&e=FyHQuO)
 
-Når du starter med programmering, skal du først forstå de **basale byggesten** i et Java program. Her lærer du det mest nødvendige for at komme i gang.
+Nu er du klar til at gå igang med at lære de **basale byggesten** i et Java program. På denne side lærer du det mest nødvendige for at komme i gang.
+
+
 
 ---
 
@@ -11,7 +14,7 @@ Når du starter med programmering, skal du først forstå de **basale byggesten*
 I IntelliJ laver du et projekt med en fil kaldet `MyFirstProgram.java` med denne kode:
 
 ```java
-String message = "hej";
+String message = "hello world";
 
 void main() {
     System.out.println(message);
@@ -20,7 +23,7 @@ void main() {
 
 **Output når du kører programmet:**
 ```
-hej
+hello world
 ```
 
 Lad os forstå hver del!
@@ -34,7 +37,7 @@ Lad os forstå hver del!
 Et **statement** er en instruktion til computeren. Hver statement slutter med `;` (semikolon).
 
 ```java
-String message = "hej";    // Statement 1 - slutter med ;
+String message = "hello world";    // Statement 1 - slutter med ;
 System.out.println(message);    // Statement 2 - slutter med ;
 ```
 
@@ -42,13 +45,13 @@ System.out.println(message);    // Statement 2 - slutter med ;
 
 **Forkert (mangler semikolon):**
 ```java
-String message = "hej"     // ERROR - mangler ;
+String message = "hello world"     // ERROR - mangler ;
 System.out.println(message)    // ERROR - mangler ;
 ```
 
 **Korrekt:**
 ```java
-String message = "hej";    // ✓
+String message = "hello world";    // ✓
 System.out.println(message);    // ✓
 ```
 
@@ -110,7 +113,7 @@ void main() {
 Du kan definere variabler **uden for** main-metoden:
 
 ```java
-String message = "hej";    // Defineret UDEN FOR main
+String message = "hello world";    // Defineret UDEN FOR main
 
 void main() {
     System.out.println(message);    // Brugt INDE I main
@@ -179,7 +182,7 @@ void main() {
 
 ✅ **Variabler uden for main() kan bruges inde i main()**
 ```java
-String message = "hej";
+String message = "hello world";
 
 void main() {
     System.out.println(message);    // Virker!
@@ -257,11 +260,3 @@ void main() {
 
 ---
 
-## Næste Skridt
-
-Nu er du klar til:
-- **Variables Set 1, Level 1** - Lær om variable types og værdier
-- **Variables Set 1, Level 2** - Lær om operators
-- Og videre gennem curriculum!
-
-**God fornøjelse med Java!** ☕🚀
