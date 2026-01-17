@@ -10,8 +10,12 @@
 - Læsbarhed og forståelighed
 - Common naming patterns
 
-
-
+- [ ] `a`
+- [ ] `age`
+- [ ] `personAge`
+- [ ] `userAge`
+- [ ]  `x`
+- [ ] `theAge`
 ---
 
 ### Gå direkte til opgaver
@@ -23,7 +27,6 @@
 - [Del E](#del-e-minmax-and-previouscurrent-patterns)
 - [Del F](#del-f-real-world-naming-scenarios)
 ---
-
 ## Begrebsgennemgang
 
 ### Hvorfor Er Gode Navne Vigtige?
@@ -139,7 +142,7 @@ int currentIndex;       // Nuværende position
 int startIndex;         // Start position
 ```
 
-### Velkendte Forkortelser
+### Vermeide Forkortelser
 
 Undgå forkortelser med mindre de er velkendte:
 
@@ -149,7 +152,7 @@ int numStud;
 double prc;
 String usrNm;
 
-// GODT - beskrivende
+// GODT - fuld ord
 int numberOfStudents;
 double price;
 String userName;
@@ -295,6 +298,7 @@ boolean isActive;   // GODT - klar boolean
 
 **Opgave:** 
 Vælg ALLE de navne der er acceptable (god praksis):
+
 - [ ] `a`
 - [ ] `age`
 - [ ] `personAge`
@@ -303,11 +307,17 @@ Vælg ALLE de navne der er acceptable (god praksis):
 - [ ] `theAge`
 
 <details>
-<summary> Se svar</summary>
- <detail><code>age, personAge, userAge</code> (alle er OK, men <code>personAge/userAge</code> er mest beskrivende) </detail>
+<summary>Se svar</summary>
+
+- `a` - **NEJ** (enkeltbogstav, ikke beskrivende)
+- `age` - **JA** (acceptabelt, kort men klart)
+- `personAge` - **JA** (godt, beskrivende)
+- `userAge` - **JA** (godt, beskrivende)
+- `x` - **NEJ** (enkeltbogstav, meningsløs)
+- `theAge` - **NEJ** (unødvendig "the", ikke idiomatisk)
+
+**Bedste valg:** `personAge` eller `userAge` (mest beskrivende)
 </details>
-
-
 
 ---
 
@@ -317,17 +327,24 @@ Vælg ALLE de navne der er acceptable (god praksis):
 **Opgave:** 
 Erklær en variabel med et GODT navn og initialiser til 99.99
 
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Dit variabelnavn og værdi | <input type="text" size="30"> |
+
 **Hint:** Brug camelCase, vær beskrivende
 
-
-
 <details>
-<summary> Se eksempel løsning </summary>
-<detail>
-<code>
-double productPrice = 99.99; // eller
+<summary>Se svar</summary>
+
+```java
+double productPrice = 99.99;
+```
+eller
+```java
 double price = 99.99;
-</code></detail>
+```
+
+Begge er acceptable. `productPrice` er mere specifik.
 </details>
 
 ---
@@ -338,15 +355,23 @@ double price = 99.99;
 **Opgave:** 
 Erklær en boolean med et GODT navn og initialiser til true
 
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Dit variabelnavn og værdi | <input type="text" size="30"> |
+
 **Hint:** Boolean navne starter typisk med is/has/can
 
-
 <details>
-<summary> Se svar</summary>
- <detail><code>boolean isLoggedIn = true;</code>  </detail>
+<summary>Se svar</summary>
+
+```java
+boolean isLoggedIn = true;
+```
+
+Andre acceptable navne:
+- `boolean loggedIn = true;` (OK, men `is` præfix er bedre)
+- `boolean userLoggedIn = true;` (OK, men lidt langt)
 </details>
-
-
 
 ---
 
@@ -356,20 +381,23 @@ Erklær en boolean med et GODT navn og initialiser til true
 **Opgave:** 
 Erklær en int variabel med et GODT navn og initialiser til 0
 
-
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Dit variabelnavn og værdi | <input type="text" size="30"> |
 
 <details>
-<summary> Se svar</summary>
- <detail><code>java
+<summary>Se svar</summary>
+
+```java
 int studentCount = 0;
-// eller
+```
+eller
+```java
 int numberOfStudents = 0;
-</code> </detail>
+```
+
+Begge er gode. `studentCount` er mere koncis, `numberOfStudents` er mere eksplicit.
 </details>
-
-
-
-
 
 ---
 
@@ -379,14 +407,24 @@ int numberOfStudents = 0;
 **Opgave:** 
 Erklær en String variabel med et GODT navn og initialiser til "anna"
 
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Dit variabelnavn og værdi | <input type="text" size="30"> |
+
 <details>
-<summary> Se svar</summary>
- <detail><code>
+<summary>Se svar</summary>
+
+```java
 String userName = "anna";
-// eller
+```
+eller
+```java
 String username = "anna";
-</code></detail>
+```
+
+Begge er acceptable. `userName` følger camelCase bedre.
 </details>
+
 ---
 
 ## Del B: Identifying Bad Names
@@ -395,25 +433,22 @@ String username = "anna";
 **Opgave:** 
 Identificer hvad der er galt med disse navne:
 
-```java
-int a = 25;
-double prc = 99.99;
-boolean b = true;
-String usrnm = "test";
-int num_students = 30;
-```
+| Variabelnavn | Hvad er galt? |
+|--------------|---------------|
+| `int a = 25;` | <input type="text" size="40"> |
+| `double prc = 99.99;` | <input type="text" size="40"> |
+| `boolean b = true;` | <input type="text" size="40"> |
+| `String usrnm = "test";` | <input type="text" size="40"> |
+| `int num_students = 30;` | <input type="text" size="40"> |
 
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
-- `a`- Enkeltbogstav, ikke beskrivende
-- `prc` - Forkortelse, uklar
+- `a` - Enkeltbogstav, ikke beskrivende
+- `prc` - Forkortelse, uklar betydning
 - `b` - Enkeltbogstav, ikke beskrivende
-- `usrnm` - Forkortelse, uklar
-- `num_students` - Bruger underscore i stedet for camelCase
-
-</detail>
+- `usrnm` - Forkortelse, uklar (burde være `userName`)
+- `num_students` - Bruger underscore i stedet for camelCase (burde være `numStudents` eller `studentCount`)
 </details>
 
 ---
@@ -422,18 +457,15 @@ int num_students = 30;
 **Opgave:** 
 Omdøb disse variable til GODE navne:
 
-```java
-int x = 30;              // Repræsenterer alder
-double p = 199.99;       // Repræsenterer pris
-boolean f = false;       // Tracker om user er aktiv
-String n = "Anna";       // Bruger's navn
-```
-
-**Eksempel løsning:**
+| Dårligt navn | Hvad det repræsenterer | Dit bedre navn |
+|--------------|------------------------|----------------|
+| `int x = 30;` | Alder | <input type="text" size="25"> |
+| `double p = 199.99;` | Pris | <input type="text" size="25"> |
+| `boolean f = false;` | Om user er aktiv | <input type="text" size="25"> |
+| `String n = "Anna";` | Bruger's navn | <input type="text" size="25"> |
 
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 int age = 30;
@@ -441,7 +473,6 @@ double price = 199.99;
 boolean isActive = false;
 String userName = "Anna";
 ```
-</detail>
 </details>
 
 ---
@@ -450,17 +481,15 @@ String userName = "Anna";
 **Opgave:** 
 Ret disse navne så de følger camelCase:
 
-```java
-int max_age = 150;
-double product_price = 50.0;
-boolean is_logged_in = true;
-String user_name = "bob";
-```
-
+| Forkert navn | Korrekt camelCase |
+|--------------|-------------------|
+| `int max_age = 150;` | <input type="text" size="25"> |
+| `double product_price = 50.0;` | <input type="text" size="25"> |
+| `boolean is_logged_in = true;` | <input type="text" size="25"> |
+| `String user_name = "bob";` | <input type="text" size="25"> |
 
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 int maxAge = 150;
@@ -468,56 +497,52 @@ double productPrice = 50.0;
 boolean isLoggedIn = true;
 String userName = "bob";
 ```
-
-</detail>
 </details>
+
 ---
 
 ### Opgave 3.9: For lange navne
 **Opgave:** 
 Forkort disse navne (hold dem beskrivende):
 
-```java
-int theCurrentNumberOfStudentsInTheClass = 25;
-double theTotalPriceIncludingTaxAndShipping = 299.99;
-boolean isTheUserCurrentlyLoggedIntoTheSystem = true;
-```
+| For langt navn | Kortere, men stadig beskrivende |
+|----------------|--------------------------------|
+| `int theCurrentNumberOfStudentsInTheClass = 25;` | <input type="text" size="30"> |
+| `double theTotalPriceIncludingTaxAndShipping = 299.99;` | <input type="text" size="30"> |
+| `boolean isTheUserCurrentlyLoggedIntoTheSystem = true;` | <input type="text" size="30"> |
 
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 int studentCount = 25;
 double totalPrice = 299.99;
 boolean isLoggedIn = true;
 ```
-
-</detail>
 </details>
+
 ---
 
 ### Opgave 3.10: For korte navne
 **Opgave:** 
 Gør disse navne mere beskrivende:
 
-```java
-int c = 10;      // Counter af items
-double p = 50;   // Pris per item
-boolean f = true; // Er valid
-```
+| For kort navn | Hvad det betyder | Bedre navn |
+|---------------|------------------|------------|
+| `int c = 10;` | Counter af items | <input type="text" size="25"> |
+| `double p = 50;` | Pris per item | <input type="text" size="25"> |
+| `boolean f = true;` | Er valid | <input type="text" size="25"> |
 
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 int itemCount = 10;
 double pricePerItem = 50;
 boolean isValid = true;
 ```
-</detail>
 </details>
+
 ---
 
 ## Del C: Boolean Naming
@@ -528,15 +553,18 @@ boolean isValid = true;
 **Opgave:** 
 Erklær en boolean med et GODT navn
 
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Dit variabelnavn | <input type="text" size="30"> |
+
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 boolean isEven = true;
 ```
-</detail>
 </details>
+
 ---
 
 ### Opgave 3.12: Boolean med has prefix
@@ -545,16 +573,20 @@ boolean isEven = true;
 **Opgave:** 
 Erklær en boolean med et GODT navn
 
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Dit variabelnavn | <input type="text" size="30"> |
+
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 boolean hasAdminRights = true;
-// eller
+```
+eller
+```java
 boolean hasPermission = true;
 ```
-</detail>
 </details>
 
 ---
@@ -565,28 +597,33 @@ boolean hasPermission = true;
 **Opgave:** 
 Erklær en boolean med et GODT navn
 
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Dit variabelnavn | <input type="text" size="30"> |
+
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 boolean canEdit = true;
 ```
-</detail>
 </details>
+
 ---
 
 ### Opgave 3.14: Multiple boolean scenarios
 **Opgave:** 
 Navngiv boolean variable for disse scenarios:
-1. Tracker om password er korrekt
-2. Tracker om form har fejl
-3. Tracker om user kan delete
-4. Tracker om data er loaded
+
+| Scenario | Dit variabelnavn |
+|----------|------------------|
+| Tracker om password er korrekt | <input type="text" size="30"> |
+| Tracker om form har fejl | <input type="text" size="30"> |
+| Tracker om user kan delete | <input type="text" size="30"> |
+| Tracker om data er loaded | <input type="text" size="30"> |
 
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 boolean isPasswordCorrect = true;
@@ -594,30 +631,23 @@ boolean hasErrors = false;
 boolean canDelete = true;
 boolean isLoaded = true;
 ```
-</detail>
 </details>
+
 ---
 
 ### Opgave 3.15: Boolean anti-patterns
 **Opgave:** 
 Ret disse boolean navne:
 
-```java
-boolean active = true;       // Mangler is
-boolean status = false;      // Ikke boolean-agtigt
-boolean flag = true;         // For generisk
-boolean check = false;       // For generisk
-```
- <input type="text">
- <input type="text">
- <input type="text">
- <input type="text">
-
----
+| Dårligt navn | Bedre navn |
+|--------------|------------|
+| `boolean active = true;` (Mangler is) | <input type="text" size="30"> |
+| `boolean status = false;` (Ikke boolean-agtigt) | <input type="text" size="30"> |
+| `boolean flag = true;` (For generisk) | <input type="text" size="30"> |
+| `boolean check = false;` (For generisk) | <input type="text" size="30"> |
 
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 boolean isActive = true;
@@ -625,8 +655,8 @@ boolean isOnline = false;
 boolean isValid = true;
 boolean isComplete = false;
 ```
-</detail>
 </details>
+
 ---
 
 ## Del D: Context-Aware Naming
@@ -637,18 +667,15 @@ boolean isComplete = false;
 **Opgave:** 
 Navngiv variable til at gemme:
 
-
 | <!-- --> | <!-- --> |
 |----------|----------|
-| Total pris | <input type="text">|
-| Antal items i kurv | <input type="text">|
-Om brugeren har discount code | <input type="text">|
-|Shipping cost |  <input type="text">|
-
+| Total pris | <input type="text" size="30"> |
+| Antal items i kurv | <input type="text" size="30"> |
+| Om brugeren har discount code | <input type="text" size="30"> |
+| Shipping cost | <input type="text" size="30"> |
 
 <details>
-<summary> Se svar</summary>
- <detail>
+<summary>Se svar</summary>
 
 ```java
 double totalPrice = 0.0;
@@ -656,7 +683,6 @@ int itemCount = 0;
 boolean hasDiscountCode = false;
 double shippingCost = 25.0;
 ```
-</detail>
 </details>
 
 ---
@@ -666,13 +692,18 @@ double shippingCost = 25.0;
 
 **Opgave:** 
 Navngiv variable til at gemme:
-1. User's fornavn
-2. User's efternavn
-3. User's email
-4. User's alder
-5. Om profile er complete
 
-**Eksempel løsning:**
+| <!-- --> | <!-- --> |
+|----------|----------|
+| User's fornavn | <input type="text" size="30"> |
+| User's efternavn | <input type="text" size="30"> |
+| User's email | <input type="text" size="30"> |
+| User's alder | <input type="text" size="30"> |
+| Om profile er complete | <input type="text" size="30"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 String firstName = "Anna";
 String lastName = "Jensen";
@@ -680,6 +711,7 @@ String email = "anna@example.com";
 int age = 25;
 boolean isProfileComplete = true;
 ```
+</details>
 
 ---
 
@@ -688,18 +720,24 @@ boolean isProfileComplete = true;
 
 **Opgave:** 
 Navngiv variable til at gemme:
-1. Player's score
-2. Player's health (0-100)
-3. Om game er paused
-4. Current level nummer
 
-**Eksempel løsning:**
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Player's score | <input type="text" size="30"> |
+| Player's health (0-100) | <input type="text" size="30"> |
+| Om game er paused | <input type="text" size="30"> |
+| Current level nummer | <input type="text" size="30"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 int playerScore = 0;
 int playerHealth = 100;
 boolean isPaused = false;
 int currentLevel = 1;
 ```
+</details>
 
 ---
 
@@ -708,18 +746,24 @@ int currentLevel = 1;
 
 **Opgave:** 
 Navngiv variable til at gemme:
-1. Current temperature i celsius
-2. Max temperature today
-3. Min temperature today
-4. Om det regner
 
-**Eksempel løsning:**
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Current temperature i celsius | <input type="text" size="30"> |
+| Max temperature today | <input type="text" size="30"> |
+| Min temperature today | <input type="text" size="30"> |
+| Om det regner | <input type="text" size="30"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 double currentTemperature = 22.5;
 double maxTemperature = 25.0;
 double minTemperature = 18.0;
 boolean isRaining = false;
 ```
+</details>
 
 ---
 
@@ -728,18 +772,24 @@ boolean isRaining = false;
 
 **Opgave:** 
 Navngiv variable til at gemme:
-1. Account balance
-2. Monthly fee
-3. Om account er active
-4. Antal transactions denne måned
 
-**Eksempel løsning:**
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Account balance | <input type="text" size="30"> |
+| Monthly fee | <input type="text" size="30"> |
+| Om account er active | <input type="text" size="30"> |
+| Antal transactions denne måned | <input type="text" size="30"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 double accountBalance = 5000.0;
 double monthlyFee = 25.0;
 boolean isActive = true;
 int transactionCount = 12;
 ```
+</details>
 
 ---
 
@@ -750,16 +800,22 @@ int transactionCount = 12;
 
 **Opgave:** 
 Navngiv variable til at gemme:
-1. Minimum alder (0)
-2. Maximum alder (150)
-3. En persons alder (25)
 
-**Eksempel løsning:**
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Minimum alder (0) | <input type="text" size="30"> |
+| Maximum alder (150) | <input type="text" size="30"> |
+| En persons alder (25) | <input type="text" size="30"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 int minAge = 0;
 int maxAge = 150;
 int personAge = 25;
 ```
+</details>
 
 ---
 
@@ -768,17 +824,25 @@ int personAge = 25;
 
 **Opgave:** 
 Navngiv variable til at gemme:
-1. Tidligere pris (199.99)
-2. Nuværende pris (149.99)
 
-**Eksempel løsning:**
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Tidligere pris (199.99) | <input type="text" size="30"> |
+| Nuværende pris (149.99) | <input type="text" size="30"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 double previousPrice = 199.99;
 double currentPrice = 149.99;
-// eller
+```
+eller
+```java
 double oldPrice = 199.99;
 double newPrice = 149.99;
 ```
+</details>
 
 ---
 
@@ -787,14 +851,20 @@ double newPrice = 149.99;
 
 **Opgave:** 
 Navngiv variable til at gemme:
-1. Start tid (9)
-2. Slut tid (17)
 
-**Eksempel løsning:**
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Start tid (9) | <input type="text" size="30"> |
+| Slut tid (17) | <input type="text" size="30"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 int startTime = 9;
 int endTime = 17;
 ```
+</details>
 
 ---
 
@@ -803,14 +873,20 @@ int endTime = 17;
 
 **Opgave:** 
 Navngiv variable til at gemme:
-1. First index i array (0)
-2. Last index i array (9)
 
-**Eksempel løsning:**
+| <!-- --> | <!-- --> |
+|----------|----------|
+| First index i array (0) | <input type="text" size="30"> |
+| Last index i array (9) | <input type="text" size="30"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 int firstIndex = 0;
 int lastIndex = 9;
 ```
+</details>
 
 ---
 
@@ -819,16 +895,22 @@ int lastIndex = 9;
 
 **Opgave:** 
 Navngiv variable til at gemme:
-1. Bedste score (100)
-2. Værste score (45)
-3. Gennemsnits score (75.5)
 
-**Eksempel løsning:**
+| <!-- --> | <!-- --> |
+|----------|----------|
+| Bedste score (100) | <input type="text" size="30"> |
+| Værste score (45) | <input type="text" size="30"> |
+| Gennemsnits score (75.5) | <input type="text" size="30"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 int bestScore = 100;
 int worstScore = 45;
 double averageScore = 75.5;
 ```
+</details>
 
 ---
 
@@ -839,14 +921,19 @@ double averageScore = 75.5;
 
 **Opgave:** 
 Erklær og initialiser variable med GODE navne til:
-1. Product name: "Laptop"
-2. Product price: 7999.99
-3. In stock: true
-4. Stock quantity: 15
-5. Discount percent: 10.0
-6. Category: "Electronics"
 
-**Eksempel løsning:**
+| <!-- --> | Værdi | Dit variabelnavn og værdi |
+|----------|-------|---------------------------|
+| Product name | "Laptop" | <input type="text" size="35"> |
+| Product price | 7999.99 | <input type="text" size="35"> |
+| In stock | true | <input type="text" size="35"> |
+| Stock quantity | 15 | <input type="text" size="35"> |
+| Discount percent | 10.0 | <input type="text" size="35"> |
+| Category | "Electronics" | <input type="text" size="35"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 String productName = "Laptop";
 double productPrice = 7999.99;
@@ -855,6 +942,7 @@ int stockQuantity = 15;
 double discountPercent = 10.0;
 String category = "Electronics";
 ```
+</details>
 
 ---
 
@@ -863,13 +951,18 @@ String category = "Electronics";
 
 **Opgave:** 
 Erklær og initialiser variable med GODE navne til:
-1. Student name: "Anna"
-2. Test score: 85
-3. Homework score: 92
-4. Final grade (average): 88.5
-5. Passed course: true
 
-**Eksempel løsning:**
+| <!-- --> | Værdi | Dit variabelnavn og værdi |
+|----------|-------|---------------------------|
+| Student name | "Anna" | <input type="text" size="35"> |
+| Test score | 85 | <input type="text" size="35"> |
+| Homework score | 92 | <input type="text" size="35"> |
+| Final grade (average) | 88.5 | <input type="text" size="35"> |
+| Passed course | true | <input type="text" size="35"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 String studentName = "Anna";
 int testScore = 85;
@@ -877,6 +970,7 @@ int homeworkScore = 92;
 double finalGrade = 88.5;
 boolean passedCourse = true;
 ```
+</details>
 
 ---
 
@@ -885,14 +979,19 @@ boolean passedCourse = true;
 
 **Opgave:** 
 Erklær og initialiser variable med GODE navne til:
-1. Guest name: "Peter Hansen"
-2. Room number: 204
-3. Number of nights: 3
-4. Price per night: 899.00
-5. Has breakfast: true
-6. Total cost: 2697.00
 
-**Eksempel løsning:**
+| <!-- --> | Værdi | Dit variabelnavn og værdi |
+|----------|-------|---------------------------|
+| Guest name | "Peter Hansen" | <input type="text" size="35"> |
+| Room number | 204 | <input type="text" size="35"> |
+| Number of nights | 3 | <input type="text" size="35"> |
+| Price per night | 899.00 | <input type="text" size="35"> |
+| Has breakfast | true | <input type="text" size="35"> |
+| Total cost | 2697.00 | <input type="text" size="35"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 String guestName = "Peter Hansen";
 int roomNumber = 204;
@@ -901,6 +1000,7 @@ double pricePerNight = 899.00;
 boolean hasBreakfast = true;
 double totalCost = 2697.00;
 ```
+</details>
 
 ---
 
@@ -909,13 +1009,18 @@ double totalCost = 2697.00;
 
 **Opgave:** 
 Erklær og initialiser variable med GODE navne til:
-1. Steps walked today: 8547
-2. Goal steps: 10000
-3. Distance in km: 6.2
-4. Calories burned: 420
-5. Goal reached: false
 
-**Eksempel løsning:**
+| <!-- --> | Værdi | Dit variabelnavn og værdi |
+|----------|-------|---------------------------|
+| Steps walked today | 8547 | <input type="text" size="35"> |
+| Goal steps | 10000 | <input type="text" size="35"> |
+| Distance in km | 6.2 | <input type="text" size="35"> |
+| Calories burned | 420 | <input type="text" size="35"> |
+| Goal reached | false | <input type="text" size="35"> |
+
+<details>
+<summary>Se svar</summary>
+
 ```java
 int stepsToday = 8547;
 int goalSteps = 10000;
@@ -923,6 +1028,7 @@ double distanceKm = 6.2;
 int caloriesBurned = 420;
 boolean goalReached = false;
 ```
+</details>
 
 ---
 
@@ -931,20 +1037,25 @@ boolean goalReached = false;
 
 **Opgave:** 
 Erklær variable med PERFEKTE navne til at gemme:
-1. Book title
-2. Author name
-3. ISBN number
-4. Number of pages
-5. Is available for borrowing
-6. Current borrower (if any)
-7. Due date
-8. Fine amount if overdue
-9. Is bestseller
-10. Rating (0.0-5.0)
+
+| <!-- --> | Dit variabelnavn |
+|----------|------------------|
+| Book title | <input type="text" size="35"> |
+| Author name | <input type="text" size="35"> |
+| ISBN number | <input type="text" size="35"> |
+| Number of pages | <input type="text" size="35"> |
+| Is available for borrowing | <input type="text" size="35"> |
+| Current borrower (if any) | <input type="text" size="35"> |
+| Due date | <input type="text" size="35"> |
+| Fine amount if overdue | <input type="text" size="35"> |
+| Is bestseller | <input type="text" size="35"> |
+| Rating (0.0-5.0) | <input type="text" size="35"> |
 
 Fokuser på at vælge de BEDST mulige navne!
 
-**Eksempel løsning:**
+<details>
+<summary>Se svar</summary>
+
 ```java
 String bookTitle = "Java Programming";
 String authorName = "John Smith";
@@ -957,6 +1068,7 @@ double fineAmount = 0.0;
 boolean isBestseller = true;
 double rating = 4.5;
 ```
+</details>
 
 ---
 
