@@ -4,13 +4,13 @@
 
 ### Indhold
 
-- [Del A: Basic Naming Practice](#del-a-basic-naming-practice)
-- [Del B: Identifying Bad Names](#del-b-identifying-bad-names)
-- [Del C: Boolean Naming](#del-c-boolean-naming)
-- [Del D: Context-Aware Naming](#del-d-context-aware-naming)
-- [Del E: Min/Max and Previous/Current Patterns](#del-e-minmax-and-previouscurrent-patterns)
-- [Del F: Real-World Naming Scenarios](#del-f-real-world-naming-scenarios)
-- [Refleksionsspørgsmål](#refleksionsspørgsmål)
+- [ ] [Del A: Basic Naming Practice](#del-a-basic-naming-practice)
+- [ ] [Del B: Identifying Bad Names](#del-b-identifying-bad-names)
+- [ ] [Del C: Boolean Naming](#del-c-boolean-naming)
+- [ ] [Del D: Context-Aware Naming](#del-d-context-aware-naming)
+- [ ] [Del E: Min/Max and Previous/Current Patterns](#del-e-minmax-and-previouscurrent-patterns)
+- [ ] [Del F: Real-World Naming Scenarios](#del-f-real-world-naming-scenarios)
+- [ ] [Refleksionsspørgsmål](#refleksionsspørgsmål)
 
 
 ## Del A: Basic Naming Practice

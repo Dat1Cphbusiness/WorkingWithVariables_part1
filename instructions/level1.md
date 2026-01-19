@@ -1,14 +1,14 @@
 # Opgaver: Variable Basics & Data Types
 
--[ ] [Del A: Declaration & Initialization](#del-a-declaration--initialization)
--[ ] [Del B: Working with int](#del-b-working-with-int)
--[ ] [Del C: Working with double](#del-c-working-with-double)
--[ ] [Del D: Working with boolean](#del-d-working-with-boolean)
--[ ] [Del E: Working with char](#del-e-working-with-char)
--[ ] [Del F: Working with String](#del-f-working-with-string)
--[ ] [Del G: Working with Arrays (Sneak Peek)](#del-g-working-with-arrays-sneak-peek)
--[ ] [Del H: Mixed Types](#del-h-mixed-types)
--[ ] [Refleksionsspørgsmål](#refleksionsspørgsmål)
+- [ ] [Del A: Declaration & Initialization](#del-a-declaration--initialization)
+- [ ] [Del B: Working with int](#del-b-working-with-int)
+- [ ] [Del C: Working with double](#del-c-working-with-double)
+- [ ] [Del D: Working with boolean](#del-d-working-with-boolean)
+- [ ] [Del E: Working with char](#del-e-working-with-char)
+- [ ] [Del F: Working with String](#del-f-working-with-string)
+- [ ] [Del G: Working with Arrays (Sneak Peek)](#del-g-working-with-arrays-sneak-peek)
+- [ ] [Del H: Mixed Types](#del-h-mixed-types)
+- [ ] [Refleksionsspørgsmål](#refleksionsspørgsmål)
 
 ## Del A: Declaration & Initialization
 

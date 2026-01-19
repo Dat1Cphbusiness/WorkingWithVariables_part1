@@ -3,13 +3,13 @@
 
 ## Indhold
 
-- [Del A: Array Declaration and Initialization](#del-a-array-declaration-and-initialization)
-- [Del B: Accessing Elements](#del-b-accessing-elements)
-- [Del C: Array Length](#del-c-array-length)
-- [Del D: Different Array Types](#del-d-different-array-types)
-- [Del E: Zero-Based Indexing](#del-e-zero-based-indexing)
-- [Del F: Working with Arrays](#del-f-working-with-arrays)
-- [Refleksionsspørgsmål](#refleksionsspørgsmål)
+- [ ] [Del A: Array Declaration and Initialization](#del-a-array-declaration-and-initialization)
+- [ ] [Del B: Accessing Elements](#del-b-accessing-elements)
+- [ ] [Del C: Array Length](#del-c-array-length)
+- [ ] [Del D: Different Array Types](#del-d-different-array-types)
+- [ ] [Del E: Zero-Based Indexing](#del-e-zero-based-indexing)
+- [ ] [Del F: Working with Arrays](#del-f-working-with-arrays)
+- [ ] [Refleksionsspørgsmål](#refleksionsspørgsmål)
 
 ---
 
