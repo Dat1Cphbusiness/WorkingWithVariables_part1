@@ -1,201 +1,14 @@
-# Level 1: Variable Basics & Primitive Types
+prompt. 
 
-## Level 1 fokuserer på:
-- Variable declaration (erklæring)
-- Variable initialization (initialisering)
-- Variable assignment (tildeling)
-- Primitive data types (int, double, boolean, char)
-- Type compatibility
-- Constants (final)
-- Variable naming conventions
-- Reassignment
+Do the same on all the assignments in this level. 
+First add begrebsgennemgang and assignments with String to this set
 
----
-
-## Begrebsgennemgang
-
-### Hvad er en Variabel?
-En **variabel** er en navngivet beholder der kan holde en værdi. Du kan tænke på det som en æske med et navn på, hvor du kan lægge ting i.
-
-```java
-int age;        // Erklærer en variabel kaldet "age"
-age = 25;       // Tilføjer værdien 25 til variablen
-```
-
-### Declaration vs Initialization
-
-**Declaration** (erklæring) - Opretter variablen:
-```java
-int age;           // Variablen eksisterer, men har ingen værdi
-```
-
-**Initialization** (initialisering) - Giver første værdi:
-```java
-age = 25;          // Nu har age værdien 25
-```
-
-**Declaration + Initialization** - Begge på én gang:
-```java
-int age = 25;      // Opretter OG giver værdi
-```
-
-### Assignment (Tildeling)
-Du kan **ændre** værdien af en variabel:
-
-```java
-int age = 25;      // Først er age 25
-age = 26;          // Nu er age 26
-age = 30;          // Nu er age 30
-```
-
-### Primitive Data Types
-
-Java har 4 hovedtyper af primitive data types (vi fokuserer på disse):
-
-#### 1. **int** - Hele tal
-```java
-int age = 25;
-int quantity = 100;
-int temperature = -5;
-```
-
-#### 2. **double** - Decimaltal
-```java
-double price = 19.99;
-double height = 1.75;
-double temperature = 36.5;
-```
-
-#### 3. **boolean** - true eller false
-```java
-boolean isStudent = true;
-boolean isRaining = false;
-boolean hasDiscount = true;
-```
-
-#### 4. **char** - Enkelt tegn
-```java
-char grade = 'A';
-char initial = 'M';
-char symbol = '@';
-```
-
-**Vigtigt:** char bruger single quotes `'A'`, ikke double quotes `"A"`
-
-### Variable Naming Conventions
-
-**Gode navne:**
-```java
-int age;              // Beskrivende
-double totalPrice;    // camelCase for flere ord
-boolean isActive;     // boolean starter ofte med "is"
-int studentCount;     // Tydeligt hvad den tæller
-```
-
-**Dårlige navne:**
-```java
-int a;               // For kort, ikke beskrivende
-int TotalPrice;      // Skal ikke starte med stort bogstav
-int total_price;     // Brug camelCase, ikke underscore
-int x123;            // Meningsløst navn
-```
-
-**Regler:**
-- Start med lille bogstav
-- Brug camelCase for flere ord (firstWord, secondWord)
-- Være beskrivende (age er bedre end a)
-- Ingen mellemrum eller specialtegn (undtagen _)
-
-### Type Compatibility
-
-Du kan IKKE blande typer uden at være opmærksom:
-
-```java
-int age = 25;
-age = 25.5;        // FEJL! Kan ikke putte double i int
-
-double price = 19.99;
-price = 20;        // OK! int kan automatisk blive til double
-```
-
-### Type Conversion
-
-**int til double** (automatisk):
-```java
-int whole = 10;
-double decimal = whole;  // decimal bliver 10.0
-```
-
-**double til int** (manuel - mister decimaler):
-```java
-double decimal = 10.75;
-int whole = (int) decimal;  // whole bliver 10 (mister .75)
-```
-
-### Constants (final)
-En **constant** er en variabel der IKKE kan ændres:
-
-```java
-final int MAX_AGE = 100;
-MAX_AGE = 101;  // FEJL! Kan ikke ændre en final variabel
-```
-
-**Naming convention for constants:**
-- ALLE_STORE_BOGSTAVER
-- Underscore mellem ord
-
-```java
-final double PI = 3.14159;
-final int MAX_STUDENTS = 30;
-final boolean DEBUG_MODE = true;
-```
-
-### Reassignment
-Du kan ændre værdien af en variabel (hvis den ikke er final):
-
-```java
-int score = 100;
-System.out.println(score);  // 100
-
-score = 200;
-System.out.println(score);  // 200
-
-score = score + 50;         // Brug gammel værdi til at beregne ny
-System.out.println(score);  // 250
-```
-
-### Variables med Objects
-Du kan også have variabler der holder objekter:
-
-```java
-Person person = new Person("Anna", "Jensen");
-int age = person.getAge();           // Hent værdi fra objekt
-person.setAge(25);                    // Sæt ny værdi i objekt
-```
-
-**Tag udgangspunkt i klasserne Temperature, Person, og Product.**  
-**Skriv din kode i Main.java i testLevel1() metoden.**
-
-**VIGTIGT:** Du skal IKKE implementere metoder i klasserne. Al kode skrives i testLevel1().
-
----
-
-## Tips
-- Erklær variabler med meningsfulde navne
-- Initialiser variabler før du bruger dem
-- int for hele tal, double for decimaltal
-- boolean for true/false, char for enkelte tegn
-- Brug final for værdier der ikke skal ændres
-- camelCase for variable navne
-- Print variabler ofte for at se deres værdier
-- Al din kode skal placeres inde i `testLevel1()` metoden mellem tuborgklammerne `{}`
-
----
+# Opgaver: Variable Basics & Data Types
 
 ## Del A: Declaration & Initialization
 
 ### Opgave 1.1: Din første variabel
-📖 [Se forklaring: Declaration & Initialization](#declaration-vs-initialization)
+📖 [Se forklaring: Declaration & Initialization](../concepts/#declaration-vs-initialization)
 
 **Opgave:** 
 1. Lav en klasse i src folderen. Du bestemmer navnet på klassen.
@@ -211,11 +24,27 @@ person.setAge(25);                    // Sæt ny værdi i objekt
 
 ---
 
+I de følgende opgaver fylder du bare på i main metoden.
+
 ### Opgave 1.2: Declaration og initialization separat
+
+
 **Opgave:** 
 1. Erklær en int variabel `score` (uden at initialisere)
 2. På næste linje, tilføj værdien 100 til `score`
 3. Print score
+
+<details>
+<summary>Hjælp</summary>
+<detail>
+
+1. `int score;`
+2.  `score = 100;`
+3.  `System.out.print(score);`
+
+
+</detail>
+</details>
 
 **Forventet Output:**
 ```
@@ -244,7 +73,7 @@ person.setAge(25);                    // Sæt ny værdi i objekt
    - int `quantity` = 5
    - double `pricePerItem` = 12.50
    - boolean `inStock` = true
-2. Print alle tre
+2. Print alle tre 
 
 **Forventet Output:**
 ```
