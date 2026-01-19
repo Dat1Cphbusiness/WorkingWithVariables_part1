@@ -1,4 +1,13 @@
-# Opgaver:  Operators & Expressions
+# Level 2 Opgaver:  Operators & Expressions
+
+
+## Indhold
+-[ ] [Del A: Basic Arithmetic (+, -, *, /)](#del-a-basic-arithmetic----)
+-[ ] [Del B: Integer Division vs Decimal Division](#del-b-integer-division-vs-decimal-division)
+-[ ] [Del C: Modulo Operator (%)](#del-c-modulo-operator-)
+-[ ] [Del D: Operator Precedence (Rækkefølge)](#del-d-operator-precedence-rækkefølge)
+-[ ] [Del E: String Concatenation](#del-e-string-concatenation)
+-[ ] [Del F: Compound Assignment](#del-f-compound-assignment)
 
 ## Del A: Basic Arithmetic (+, -, *, /)
 

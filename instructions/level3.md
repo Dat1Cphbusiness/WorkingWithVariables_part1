@@ -1,32 +1,21 @@
-# Level 3: Variable Naming
+# Level 3 Opgaver: Variable Naming
 
-## Level 3 fokuserer på:
-- Vælge gode variabelnavne
-- Naming conventions
-- Beskrivende vs kryptiske navne
-- camelCase konvention
-- Undgå dårlige navne
-- Navngivning baseret på formål
-- Læsbarhed og forståelighed
-- Common naming patterns
 
----
 
-### INDHOLD
+### Indhold
 
-- [Del A](#del-a-basic-naming-practice)
-- [Del B](#del-b-identifying-bad-names)
-- [Del C](#del-c-boolean-naming)
-- [Del D](#del-d-context-aware-naming)
-- [Del E](#del-e-minmax-and-previouscurrent-patterns)
-- [Del F](#del-f-real-world-naming-scenarios)
----
+- [Del A: Basic Naming Practice](#del-a-basic-naming-practice)
+- [Del B: Identifying Bad Names](#del-b-identifying-bad-names)
+- [Del C: Boolean Naming](#del-c-boolean-naming)
+- [Del D: Context-Aware Naming](#del-d-context-aware-naming)
+- [Del E: Min/Max and Previous/Current Patterns](#del-e-minmax-and-previouscurrent-patterns)
+- [Del F: Real-World Naming Scenarios](#del-f-real-world-naming-scenarios)
+- [Refleksionsspørgsmål](#refleksionsspørgsmål)
 
 
 ## Del A: Basic Naming Practice
 
 ### Opgave 3.1: Navngiv en alder variabel
-📖 [Se forklaring: Beskrivende Navne](#beskrivende-navne)
 
 **Scenario:** Du skal gemme en persons alder (heltal)
 

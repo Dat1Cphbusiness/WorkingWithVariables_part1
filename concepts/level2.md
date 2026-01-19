@@ -9,7 +9,6 @@
 - Modulo operator (% - rest/remainder)
 - Compound assignment (+=, -=, *=, /=)
 - Combining numbers and strings
-
 ---
 
 ## Begrebsgennemgang
