@@ -16,7 +16,6 @@
 ## Del A: Array Declaration and Initialization
 
 ### Opgave 4.1: Dit første array
-📖 [Se forklaring: Hvad er en Array?](#hvad-er-en-array)
 
 **Opgave:** 
 Erklær et int array med navn `numbers` og værdierne 10, 20, 30.
@@ -110,7 +109,6 @@ String[] weekDays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 ## Del B: Accessing Elements
 
 ### Opgave 4.6: Access first element
-📖 [Se forklaring: Accessing Array Elements](#accessing-array-elements)
 
 **Scenario:** 
 Du har: `int[] scores = {85, 92, 78, 88};`
@@ -226,7 +224,6 @@ double average = sum / 3.0;  // 25.67
 ## Del C: Array Length
 
 ### Opgave 4.11: Get array length
-📖 [Se forklaring: Array Length](#array-length)
 
 **Scenario:** 
 Du har: `String[] names = {"Anna", "Bob", "Carl", "Diana"};`
@@ -277,7 +274,6 @@ int tempCount = temps.length;  // 2
 ---
 
 ### Opgave 4.13: Last element using length
-📖 [Se forklaring: Last Element](#last-element)
 
 **Scenario:** 
 Du har: `int[] numbers = {10, 20, 30, 40, 50};`
@@ -471,7 +467,7 @@ int[] calories = {850, 750, 250, 600, 900};
 ## Del E: Zero-Based Indexing
 
 ### Opgave 4.21: Understanding indices
-📖 [Se forklaring: Zero-Based Indexing](#zero-based-indexing)
+📖 [Se forklaring: Zero-Based Indexing](../concepts/level4.md/#zero-based-indexing)
 
 **Opgave:** 
 Givet: `String[] colors = {"Red", "Green", "Blue", "Yellow"};`

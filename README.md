@@ -14,10 +14,15 @@
 - [Level 3: Variable Naming](assignments/level3.md)
 - [Level 4: Arrays](assignments/level4.md)
 
-### Projekt
-- [Spil Karaktersystem (iterativt projekt)](assignments/project_character_system.md)
+## Progression
 
----
+| Level | Emne | Du lærer at... |
+|-------|------|----------------|
+| 1 | Variables & Data Types | Erklære og bruge variabler med forskellige datatyper |
+| 2 | Operators & Expressions | Udføre beregninger og bygge udtryk |
+| 3 | Variable Naming | Vælge gode, beskrivende variabelnavne |
+| 4 | Arrays | Gemme og tilgå flere værdier i én variabel |
+
 
 ## Sådan bruger du dette materiale
 
@@ -43,16 +48,8 @@ Træningsopgaverne her forbereder dig til ugeopgaverne.
 
 ### Iterativt projekt
 
-SP1 Projektet "Spil Karaktersystem" følger dig gennem hele Flow1. 
+[SP1](https://1sem.kursusmaterialer.dk/projects/SP1/) Projektet følger dig gennem hele Flow1. 
 Du starter med variabler og bygger videre efterhånden som du lærer kontrolstrukturer, metoder og objekter.
 
 ---
 
-## Progression
-
-| Level | Emne | Du lærer at... |
-|-------|------|----------------|
-| 1 | Variables & Data Types | Erklære og bruge variabler med forskellige datatyper |
-| 2 | Operators & Expressions | Udføre beregninger og bygge udtryk |
-| 3 | Variable Naming | Vælge gode, beskrivende variabelnavne |
-| 4 | Arrays | Gemme og tilgå flere værdier i én variabel |
