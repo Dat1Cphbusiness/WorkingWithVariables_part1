@@ -1,4 +1,4 @@
-# Programmering 1: Variabler & Data typer
+# Variabler & Data typer
 
 ## Indhold
 
