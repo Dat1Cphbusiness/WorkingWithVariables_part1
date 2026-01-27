@@ -1,45 +1,27 @@
+int a = 25;
+String b = "København";
+float c = 22.3f;
+boolean isHorizontal = false;
 
-    
-    void main(String[] args) {
-        
-        // INSTRUKTIONER TIL STUDERENDE:
-        // -------------------------------
-        // Denne Main class indeholder test metoder for ALLE levels i Variables serien.
-        // Uncomment den level du arbejder på, og kommentér resten ud.
-        
-        testLevel1();
-        //testLevel1BONUS();
-        //testLevel2();
-        //testLevel3();
-        //testLevel4();
-        //testLevel5();
+void main() {
+        System.out.println(a);
+        System.out.println(a + b);
+        int a = 16;
+        int b = a;
+        System.out.println(a + b);
+        System.out.println(b + " " + isHorizontal);
+        myMethod();
     }
-    
-    void testLevel1() {
-        // Level 1: Variable Basics & Primitive Types
-        // Fokus: Declaration, initialization, assignment, primitive types
-        // Klasser: Temperature, Person, Product
-        
-        // Din kode her
-        
-    }
-    
-    void testLevel1BONUS() {
-        // Level 2: Operators & Expressions
-        // Fokus: Arithmetic operators, string concatenation, operator precedence
-        // Klasser: PriceCalculator, GroupSplitter, TextBuilder
-        
-        // Din kode her
-        
-    }
-    
-
-    
-    void testLevel3() {
-       //Fokus navngivning
-
-
-        
-    }
+void myMethod() {
+        float d = c;
+        System.out.println(b);
+        boolean b = false;
+        int a = 700;
+        System.out.println(a + d + " : " + b);
+        int f = 5;
+        System.out.println(f * d);
+        String displayOrientation = isHorizontal ? "landscape" : "portrait";
+        System.out.println(displayOrientation);
+}
 
 

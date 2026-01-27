@@ -6,13 +6,13 @@
 - [Level 1: Variables & Data Types](concepts/level1.md)
 - [Level 2: Operators & Expressions](concepts/level2.md)
 - [Level 3: Variable Naming](concepts/level3.md)
-- [Level 4: Arrays](concepts/level4.md)
+~~- [Level 4: Arrays](concepts/level4.md)~~  (vi venter med level4)
 
 ### Assignments (Opgaver)
 - [Level 1: Variables & Data Types](assignments/level1.md)
 - [Level 2: Operators & Expressions](assignments/level2.md)
 - [Level 3: Variable Naming](assignments/level3.md)
-- [Level 4: Arrays](assignments/level4.md)
+~~- [Level 4: Arrays](assignments/level4.md)~~  (vi venter med level4)
 
 ## Progression
 
