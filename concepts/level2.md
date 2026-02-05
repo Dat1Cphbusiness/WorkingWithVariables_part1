@@ -7,7 +7,7 @@
 - Type coercion (int + double)
 - Integer division vs decimal division
 - Modulo operator (% - rest/remainder)
-- Compound assignment (+=, -=, *=, /=)
+- Compound assignment (+=, -=, *=, /=) (da.Sammensat tildeling)
 - Combining numbers and strings
 ---
 
@@ -69,7 +69,9 @@ sb.append("World");
 String result = sb.toString();  // "Hello World"
 ```
 
-Strings i Java er *immutable* (uforanderlige). Når du bruger `+` til at sætte Strings sammen, oprettes der faktisk en ny String hver gang. Ved mange sammenkædninger bliver det ineffektivt.
+Strings i Java er *immutable* (uforanderlige). For rigtig at forstå hvad det betyder, kræver det viden om programmets hukommelse, som kommer senere.
+Når du bruger `+` til at sætte Strings sammen, oprettes der faktisk en ny String hver gang.
+Ved mange sammenkædninger bliver det ineffektivt.
 
 StringBuilder holder på én buffer, som du kan tilføje til uden at oprette nye objekter. Det er hurtigere og bruger mindre hukommelse – især i loops eller når du bygger lange tekster.
 
