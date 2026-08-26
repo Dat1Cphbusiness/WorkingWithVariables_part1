@@ -1,7 +1,7 @@
 # Getting Started: Dit Første Java Program
 
 For at komme i gang, skal først have downloadet og installeret IntelliJ som er det IDE (Integrated Development Environment), vi bruger til skrive kode i.
-[Følg denne guide](https://erhvervsakademikbenhavn.sharepoint.com/:b:/r/sites/cph-Lyngby/Shared%20Documents/4.%20Indhold%20%26%20Niveau/DAT/1.%20sem%20for%C3%A5r%202026/studerende/Uge%206%20-%20IntelliJ%20-%20installationsvejledning.pdf?csf=1&web=1&e=FyHQuO)
+[Følg denne guide](https://erhvervsakademikbenhavn.sharepoint.com/:b:/r/sites/cph-Lyngby/Shared%20Documents/4.%20Indhold%20%26%20Niveau/DAT/1.%20sem%20for%C3%A5r%202026/studerende/Uge%206%20-%20IntelliJ%20-%20installationsvejledning.pdf?d=wc105da878cba432c8d0ebaa7e1cc90fc&csf=1&web=1&e=uypBbp)
 
 Nu er du klar til at gå igang med at lære de **basale byggesten** i et Java program. På denne side lærer du det mest nødvendige for at komme i gang.
 
